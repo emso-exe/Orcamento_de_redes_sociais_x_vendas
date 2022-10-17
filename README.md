@@ -1,23 +1,25 @@
-# 🔎 Análise de dados: Investidores do Tesouro Direto 💰
+# 🏸 Análise de dados: Orçamento de redes sociais x vendas 💻
 
-Projeto de análise de perfil de investidores (pesssoas físicas) do tesouro direto que aderiram ao programa entre janeiro de 2002 e junho de 2022, com base nos dados (.csv) acessíveis no portal de [Dados Abertos](https://www.tesourotransparente.gov.br/ckan/dataset) disponibilizados pelo [Tesouro Nacional Transparente](https://www.tesourotransparente.gov.br/).
+Este é um projeto que envolve machine learning para análise de dados de marketing de orçamentos de redes sociais e a relação com as vendas geradas, os dados foram disponibilizados na plataforma [Kaggle](https://www.kaggle.com/datasets/fayejavad/marketing-linear-multiple-regression).
 
-O Tesouro Direto é um programa do Tesouro Nacional desenvolvido em parceria com a B3 (antiga BM&F Bovespa) para venda de títulos públicos federais para pessoas físicas pela internet, com o objetivo de captar recursos e financiar as dívidas públicas, permite fazer aplicações com valores muito baixos e oferece liquidez diária.
+Sobre o conjunto de dados será adota a seguinte interpretação, a cada rede/mídia social das colunas 'youtube', 'facebook' e 'newspaper' é destinado um orçamento(budget) de marketing, sendo a que coluna 'sales' representa as vendas, o retorno do investimento em marketing.
 
 ## 📃 Demanda da análise
 
-- Analisar a evolução de aderências ao programa e elaborar métricas
-- Identificar os perfis e elaborar métricas dos investidores 
+- Analisar a correlação dos orçamentos(budgets) com as vendas(sales)
+- Gerar um modelo preditivo para relação de orçamento e vendas
+  
+## 📋 Tópicos da análise
 
-## ❓ Indagações a serem respondidas pela análise exploratória dos dados
-
-1. Qual o total de novos investidores por ano (2002 a 2021)?
-2. Qual o total de investidores por estado (01/2002 a 07/2022)?
-3. Qual o total de investidores em um ranking de 10 cidades (01/2002 a 07/2022)?
-4. Qual a quantidade de investidores que operaram nos últimos 12 meses (07/2021 a 07/2022)?
-5. Qual a distribuição de investidores por faixa etária e gênero (01/2002 a 07/2022)?
-6. Qual a distribuição de investidores por faixa etária, gênero e estado civil (01/2002 e 07/2022)?
-7. Qual a distribuição de investidores em um ranking de 10 perfis profissionais por gênero (01/2002 a 07/2022)?
+1. Análise das medidas estatísticas dos dados
+2. Distribuição do budget entre as mídias e os valores de vendas
+3. Correlação entre as variáveis
+4. Criação do modelo de regressão linear múltipla
+   1. Preparação dos dados de treino e teste 
+   2. Treinamento do modelo
+   3. Predições do modelo com dados de treino e teste
+   4. Métricas de performance
+   5. Previsões com novos dados
 
 ## 💻 Tecnologias
 
@@ -30,7 +32,7 @@ O Tesouro Direto é um programa do Tesouro Nacional desenvolvido em parceria com
     - Biblioteca Warnings
     - Biblioteca Tabulate
     - Biblioteca Statistics
-- Power BI
+    - Biblioteca SciKit-learn
 
 ## 💳 Créditos
 
