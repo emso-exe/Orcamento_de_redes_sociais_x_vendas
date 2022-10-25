@@ -18,8 +18,9 @@ Sobre o conjunto de dados será adota a seguinte interpretação, a cada rede/m�
    1. Preparação dos dados de treino e teste 
    2. Treinamento do modelo
    3. Predições do modelo com dados de treino e teste
-   4. Métricas de performance
-   5. Previsões com novos dados
+   4. Diferença entre dados de teste e dados previstos
+   5. Métricas de performance
+   6. Previsões com novos dados
 
 ## 💻 Tecnologias
 
